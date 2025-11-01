@@ -1,14 +1,38 @@
 <div id="sidebar" class="active">
     <div class="sidebar-wrapper active">
         <div class="sidebar-header">
-            <div class="d-flex justify-content-between">
+            <!-- <div class="d-flex justify-content-between">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                    <a href="index.html"><img src="assets/images/logo/books.png" alt="book" srcset="">Library MS</a>
                 </div>
                 <div class="toggler">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                 </div>
+            </div> -->
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 rounded 
+            bg-light text-dark bg-dark-subtle text-light-emphasis">
+                <div class="logo d-flex align-items-center gap-2">
+                    <a href="index.html" class="d-flex align-items-center text-decoration-none text-reset">
+                        <img
+                            src="assets/images/logo/books.png"
+                            alt="book"
+                            class="img-fluid me-2"
+                            style="width: 50px; height: 50px;">
+                        <span class="fw-bold fs-4">
+                            <span class="text-primary">Maktuub</span>
+                            <span class="text-body-emphasis">LM</span>
+                        </span>
+
+                    </a>
+                </div>
+
+                <div class="toggler">
+                    <a href="#" class="sidebar-hide d-xl-none d-block text-secondary fs-4">
+                        <i class="bi bi-x-lg"></i>
+                    </a>
+                </div>
             </div>
+
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
@@ -17,7 +41,7 @@
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
                     </a>
-                </li>   
+                </li>
 
                 <?php
 
@@ -36,7 +60,7 @@
                                 <span><?php echo $row['menu_name']; ?></span>
                             </a>
                         <?php
-                    } else {
+                    } else{
                         ?>
                         <li class="sidebar-item has-sub">
                             <a href="#" class='sidebar-link'>

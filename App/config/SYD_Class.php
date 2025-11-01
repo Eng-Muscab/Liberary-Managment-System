@@ -3,7 +3,7 @@ class sydClass
 {
 	public $db;
 	public $result;
-	public  $db_name = "gym";
+	public  $db_name = "education_liberary";
 
 	function startsWith($string, $startString)
 	{

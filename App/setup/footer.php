@@ -12,7 +12,7 @@
     $(document).on('click', '.get_page', function(e) {
         e.preventDefault();
         var page = $(this).attr('href');
-        $('#content').load(page + '.php');
+        $('#content').load(page);
     });
 
     $(document).on('click', '.sidebar-item', function(e) {
