@@ -7,11 +7,35 @@
 
 <script src="assets/js/main.js"></script>
 <script>
+
+
     $(document).on('click', '.get_page', function(e) {
         e.preventDefault();
         var page = $(this).attr('href');
         $('#content').load(page + '.php');
-        alert('ok');
+    });
 
-    })
+    $(document).on('click', '.sidebar-item', function(e) {
+        e.preventDefault();
+
+        // Remove active class from all sidebar items
+        $('.sidebar-item').removeClass('active');
+
+        // adding some css2 styling block to none
+        $('.submenu').css('display', 'none');
+
+        
+        $(this).find('.submenu').css('display', 'block');
+        // Add active class to the clicked item
+        $(this).addClass('active');
+    });
+
+    
 </script>
+
+
+<?php
+
+/*bkajaaj*/
+
+?>
